@@ -2,6 +2,7 @@ HELP.md
 target/
 mvnw.cmd
 HELP.md
+.mvn
 
 
 ### IntelliJ IDEA ###
