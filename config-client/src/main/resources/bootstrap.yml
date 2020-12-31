@@ -1,0 +1,7 @@
+spring:
+  cloud:
+    config:
+      uri: http://localhost:9080/
+      label: main
+      name: config
+      profile: dev
