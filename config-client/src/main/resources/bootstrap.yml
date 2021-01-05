@@ -1,7 +1,10 @@
 spring:
   cloud:
     config:
-      uri: http://localhost:9080/
+      #uri: http://localhost:9080/
       label: main
       name: config
       profile: dev
+      discovery:
+        enabled: true
+        service-id: config-server

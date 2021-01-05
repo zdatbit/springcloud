@@ -4,13 +4,39 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.zdatbit</groupId>
-    <artifactId>springcloud</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.3.7.RELEASE</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
+        <java.version>1.8</java.version>
+        <spring-cloud.version>Hoxton.SR9</spring-cloud.version>
     </properties>
+
+    <groupId>com.zdatbit</groupId>
+    <artifactId>springcloud</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+
+
+    <modules>
+        <module>config-server</module>
+        <module>config-server2</module>
+        <module>config-client</module>
+        <module>eureka1</module>
+        <module>eureka2</module>
+        <module>consumer1</module>
+        <module>producer1</module>
+        <module>producer2</module>
+    </modules>
+
+
+
+
 
 </project>
