@@ -5,9 +5,10 @@ spring:
     name: api-gateway
   cloud:
     gateway:
-      filter:
-        routes:
-          - id: gateway-service
-            uri: https://blog.csdn.net
-            predicates:
-              - Path=/meteor_93
+      discovery:
+        locator:
+          enabled: true
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka1:8761/eureka/,http://eureka2:8762/eureka/

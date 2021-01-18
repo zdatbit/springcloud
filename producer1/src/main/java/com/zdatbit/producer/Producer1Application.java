@@ -1,4 +1,4 @@
-package com.zdatbit.gateway;
+package com.zdatbit.producer;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -6,9 +6,10 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 @SpringBootApplication
 @EnableEurekaClient
-public class GateWayApplication {
+public class Producer1Application {
 
     public static void main(String[] args) {
-        SpringApplication.run(GateWayApplication.class,args);
+        SpringApplication.run(Producer1Application.class, args);
     }
+
 }
