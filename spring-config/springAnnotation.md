@@ -171,3 +171,4 @@ public class Person2 {
 另外说明，属性赋值引入外部文件时如果用的是@PropertySource只能用property文件
 ### @ConfigurationProperties 配置绑定
 todo 
+测试代码覆盖
